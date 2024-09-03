@@ -6,12 +6,12 @@ input.focus();
 
 input.addEventListener("keydown", function(e){
     if(e.key === "Enter"){
-        new_task()
+        new_task();
     }
 })
 
 function new_task(){
-    let val = input.value
+    let val = input.value;
 
     if (val === ""){
         return
@@ -37,7 +37,7 @@ list.addEventListener("click", function(e){
     }
     else if(e.target.nodeName=== "BUTTON"){
         e.target.parentElement.remove();
-        savedata()
+        savedata();
     }
 })
 
@@ -48,4 +48,4 @@ function savedata(){
 function loaddata(){
     list.innerHTML = localStorage.getItem("data");
 }
-loaddata()
+loaddata();

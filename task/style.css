@@ -6,10 +6,6 @@ button:hover{
     background-color: antiquewhite;
 }
 
-.horizontal_ar{
-    display: flex;
-}
-
 ul li{
     margin-top: 15px;
     height: 25px;
