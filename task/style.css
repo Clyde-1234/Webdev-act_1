@@ -20,11 +20,19 @@ ul li{
     padding: 14px, 8px, 14px, 50px;
     position: relative;
 }
+
+ul li:hover{
+    background-color: lightblue;
+}
 ul li.marked{
     margin-top: 15px;
     color: grey;
     background-color:lightgreen;
     text-decoration: line-through;
+}
+
+ul li.marked:hover{
+    background-color: chartreuse;
 }
 
 #container{
@@ -49,7 +57,7 @@ ul li button{
     object-fit: cover;
     width: 25px;
     height: 25px;
-    background-image: url(/img/icons8-bin-50.png);
+    background-image: url(/task/img/icons8-bin-50.png);
     background-size: cover;
     background-position: center;
     margin: 0 auto;

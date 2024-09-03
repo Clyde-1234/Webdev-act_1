@@ -1,6 +1,6 @@
 const input = document.getElementById("input");
 const submitbtn = document.getElementById("submit");
-const list = document.getElementById("list");
+const task_list = document.getElementById("list");
 
 input.focus();
 
@@ -22,7 +22,7 @@ function new_task(){
     new_task.innerHTML = val;
 
 
-    list.appendChild(new_task);
+    task_list.appendChild(new_task);
     
     input.value = "";
 
@@ -30,7 +30,7 @@ function new_task(){
     savedata();
 }
 
-list.addEventListener("click", function(e){
+task_list.addEventListener("click", function(e){
     if(e.target.nodeName=== "LI"){
         e.target.classList.toggle("marked");
         savedata();
@@ -42,10 +42,10 @@ list.addEventListener("click", function(e){
 })
 
 function savedata(){
-    localStorage.setItem("data", list.innerHTML);
+    localStorage.setItem("data", task_list.innerHTML);
 }
 
 function loaddata(){
-    list.innerHTML = localStorage.getItem("data");
+    task_list.innerHTML = localStorage.getItem("data");
 }
 loaddata();
