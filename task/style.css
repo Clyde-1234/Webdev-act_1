@@ -1,0 +1,60 @@
+button{
+    background-color: gray;
+}
+
+button:hover{
+    background-color: antiquewhite;
+}
+
+.horizontal_ar{
+    display: flex;
+}
+
+ul li{
+    margin-top: 15px;
+    height: 25px;
+    width: fit-content;
+    background-color: aqua;
+    list-style: none;
+    position: relative;
+    font-family: sans-serif;
+    font-size: 25px;
+    user-select: none;
+    cursor: pointer;
+    padding: 14px, 8px, 14px, 50px;
+    position: relative;
+}
+ul li.marked{
+    margin-top: 15px;
+    color: grey;
+    background-color:lightgreen;
+    text-decoration: line-through;
+}
+
+#container{
+    margin: 50px;
+    width: auto;
+    min-height: auto;
+    background-repeat:no-repeat;
+    background:linear-gradient( white,black);
+    background-attachment: fixed;
+}
+
+#input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    width: 250px;
+}
+
+ul li button{
+    object-fit: cover;
+    width: 25px;
+    height: 25px;
+    background-image: url(/img/icons8-bin-50.png);
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+}
