@@ -21,7 +21,6 @@ function new_task(){
     
     new_task.innerHTML = val;
 
-
     task_list.appendChild(new_task);
     
     input.value = "";
