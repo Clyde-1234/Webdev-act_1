@@ -9,12 +9,32 @@
 <body>
     <div id="container">
         <h1>To-do List</h1>
-        <input type="text" id="input" placeholder="Task here" maxlength="30">
-        <button id="submit" onclick="new_task()">Submit</button>
+        <input type="text" id="input" placeholder="Task here" maxlength="50" width="400px">
+        <h4>Deadline: 
+            <input type="date" id="deadline">
+            <button id="submit" onclick= "process_input()" >Submit</button>  
+        </h4>
+        <select id="sort">
+            <option value="publish">Date Published</option>
+            <option value="due">Due Date</option>
+        </select>
+        <div id="taskdiv">
+            <table id="list" >
+                <tr>
+                    <th style="width:550px;">Title</th>
+                    <th style="width: 140px;">Publish Date</th>
+                    <th style="width: 140px;">Due Date</th>
+                    <th style="width: 25px;">___</th>
+                </tr>
+
+
+            </table>
+         </div>
+        
+
 
     </div>
-    <ul id="list">
-    </ul>
+
     <script src="main.js"></script>
 </body>
 </html>

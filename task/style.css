@@ -6,54 +6,34 @@ button:hover{
     background-color: antiquewhite;
 }
 
-ul li{
-    margin-top: 15px;
-    height: 25px;
-    width: fit-content;
-    background-color: aqua;
-    list-style: none;
-    position: relative;
-    font-family: sans-serif;
-    font-size: 25px;
-    user-select: none;
+tr :first-child{
     cursor: pointer;
-    padding: 14px, 8px, 14px, 50px;
-    position: relative;
-}
-
-ul li:hover{
-    background-color: lightblue;
-}
-ul li.marked{
-    margin-top: 15px;
-    color: grey;
-    background-color:lightgreen;
-    text-decoration: line-through;
-}
-
-ul li.marked:hover{
-    background-color: chartreuse;
 }
 
 #container{
-    margin: 50px;
-    width: auto;
-    min-height: auto;
+    overflow: auto;
+    padding: 10px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width:600px;
+    height: 500px;
+    box-shadow: 10px 20px 15px rgba(243, 239, 239, 0.393);
     background-repeat:no-repeat;
     background:linear-gradient( white,black);
     background-attachment: fixed;
+    transition: width 0.5s ;
 }
 
 #input{
     flex: 1;
-    border: none;
     outline: none;
     background: transparent;
     padding: 10px;
     width: 250px;
 }
 
-ul li button{
+.delete{
     object-fit: cover;
     width: 25px;
     height: 25px;
@@ -61,4 +41,28 @@ ul li button{
     background-size: cover;
     background-position: center;
     margin: 0 auto;
+}
+
+.dropbox{
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: lightgray;
+}
+
+body{
+    background-color: #414849;
+}
+
+td.deadline{
+    background-color: red;
+    color:white;
+}
+
+th, td{
+    border: 2px solid black;
+}
+
+tr :first-child.marked{
+    background-color: lightgreen;
+
 }
